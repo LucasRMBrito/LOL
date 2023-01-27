@@ -1,0 +1,149 @@
+header {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.pesquisa {
+    width: 360px;
+}
+
+.logo {
+    width: 70px;
+    height: 40px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 780px;
+    /* border: solid red; */
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    top: 5%;
+    right: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 429px;
+    /* border: solid blue; */
+    background-color: black;
+}
+
+.card2 {
+    top: 5%;
+    left: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    max-width: 400px;
+    height: 429px;
+    /* border: solid red; */
+}
+
+.image {
+    /* border: solid green; */
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.personagem {
+    /* border: solid red; */
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    transition: transform .3s ease;
+}
+.personagem:hover {
+    transform: scale(1.1);
+}
+
+span {
+    margin: 5px;
+    color: white;
+    position: absolute;
+}
+
+#nome {
+    bottom: 10px;
+    left: 40%;
+}
+
+#titulo {
+    top: 5%;
+    left: 25%;
+}
+#ataque {
+    left: 20px;
+}
+#defesa {
+    right: 20px;
+}
+
+#magia{
+    left: 20px;
+    bottom: 30px;
+}
+#dificuldade{
+    right: 20px;
+    bottom: 30px;
+}
+
+#poderes {
+    bottom: 150px;
+}
+
+.correr {
+    position: absolute;
+    top: 465px;
+    width: 100px;
+    height: 100px;
+    animation: corrida 10.5s infinite linear;
+}
+.correr2 {
+    position: absolute;
+    top: 495px;
+    width: 70px;
+    height: 70px;
+    animation: corrida2 10s infinite linear;
+}
+.correr3 {
+    position: absolute;
+    /* top: 495px; */
+    width: 70px;
+    height: 70px;
+    animation: corrida3 10s infinite linear;
+}
+
+@keyframes corrida {
+    from {
+        right: -200px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes corrida2 {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes corrida3 {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 100%;
+    }
+}

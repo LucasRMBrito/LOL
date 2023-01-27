@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/icone.png" type="image/x-icon">
+    <title>League of Legends</title>
+</head>
+<body class="body">
+    <header>
+        <img src="./image/lol-logo.png" class="logo"/>
+        <select id="escolha" onChange="atualizarSelect()">
+            <option>MissFortune</option>
+            <option>Aatrox</option>
+            <option>Yasuo</option>
+            <option>Ashe</option>
+            <option>Draven</option>
+        </select>
+        <form class="form">
+            <input type="search" 
+            class="pesquisa" 
+            placeholder="Digite o nome do Campeão - primeira letra MAIUSCULA!" 
+            required
+            />
+        </form>
+        <img src="./image/lol-logo.png" class="logo"/>
+    </header>
+    <div class="container">
+        <img src="./image/gif.gif" class="correr">
+        <img src="./image/gif2.gif" class="correr2">
+        <img src="./image/gif3.gif" class="correr3">
+        <div class="card">
+            <div class="image">
+                <img src="" class="personagem">
+                <span id="nome"></span>
+                <span id="titulo"></span>
+            </div>
+            <span id="ataque"></span>
+            <span id="defesa"></span>
+            <span id="magia"></span>
+            <span id="dificuldade"></span>
+        </div>
+        <div class="card2">
+            <span id="historia"></span>
+            <span id="poderes"></span>
+            <span class="dicas"></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
